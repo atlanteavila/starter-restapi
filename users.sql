@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS `restful_api_demo`.`user_info` (
   `user_id_fk` INT(70) NOT NULL,
   `user_name` VARCHAR(45) NULL,
   `user_location` VARCHAR(45) NULL,
+  `user_role` VARCHAR(45) NULL,
   PRIMARY KEY (`user_info_id`),
   UNIQUE INDEX `user_id_fk_UNIQUE` (`user_id_fk` ASC),
   CONSTRAINT `user_info_foreign_key`
